@@ -115,4 +115,3 @@ with open(args.output, "w") as f:
 
 #step 10
 logger.info(f"Report saved to {args.output}")
-
