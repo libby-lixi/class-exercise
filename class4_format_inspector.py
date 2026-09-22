@@ -24,18 +24,18 @@ def inspect_csv(filepath):
 
 def inspect_json(filepath):
     """Read a JSON file and display basic information."""
-    with open(filepath, 'r') as file:
-        data = json.load(file)
+    with open(filepath, 'r') as f:
+        data = json.load(f)
     logger.info(f"Inspecting JSON file at: {filepath}")
-    print(json.dumps(data, indent=2))
+    print(data)
 
 
 def inspect_yaml(filepath):
     """Read a YAML file and display basic information."""
-    with open(filepath, 'r') as file:
-        data = yaml.safe_load(file)
+    with open(filepath, 'r') as f:
+        data = yaml.safe_load(f)
     logger.info(f"Inspecting YAML file at: {filepath}")
-    print(yaml.dump(data, indent=2))
+    print(data)
 
 
 def inspect_env():
@@ -77,7 +77,7 @@ def main():
     inspect_csv(csv_path)
     inspect_json(json_path)
     inspect_yaml(yaml_path)
-    
+
     inspect_env()
 
 
