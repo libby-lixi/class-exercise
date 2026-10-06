@@ -1,4 +1,5 @@
 import logging
+import pandas as pd
 from venv import logger
 
 def require_columns(df, required_cols):

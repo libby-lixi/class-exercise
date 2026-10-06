@@ -11,3 +11,4 @@ def load_netflix(filepath):
     except Exception as e:
         logger.error(f"Error loading Netflix data: {e}")
         return pd.DataFrame()
+
